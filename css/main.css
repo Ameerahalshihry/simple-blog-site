@@ -1,17 +1,7 @@
 @import './footer.css';
 @import './header.css';
+@import './font.css';
 
-
-h2{
-    color:darkblue;
-    grid-area: title;
-}
-h1{
-    text-decoration: underline;
-    color: darkblue;
-    text-shadow: 2px 2px 4px #0000008e;
-    font-size: xx-large;
-}
 .date{
     grid-area: date;
     font-style: italic;
@@ -19,6 +9,7 @@ h1{
 }
 /* Anything smaller than first breakpoint 600px */
 .container{
+    /* width:100%; */
     display: grid;
     height: auto;
     grid-template-rows: 100px 800px 85px;
@@ -41,7 +32,7 @@ h1{
     background-size: cover; 
 }
 .card{
-    width:400px;
+    width:300px;
     height:auto;
     border: 5px groove rgba(128, 128, 128, 0.418);
 }
@@ -66,7 +57,7 @@ img{
     .card-container{
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 400px 400px;
+        grid-template-rows: 450px 450px;
         justify-content: center;
         align-items: center;
         background-image: url("/images/background.jpg");
@@ -75,7 +66,7 @@ img{
     }
     .card{
         width:300px;
-        height:350px;
+        height:auto;
         padding:10px;
         border: 5px groove rgba(128, 128, 128, 0.418);
         display:flex;
@@ -97,7 +88,7 @@ img{
 .card-container{
     display: grid;
     grid-template-columns: 450px 450px;
-    grid-template-rows: 400px 400px;
+    grid-template-rows: 450px 450px;
     justify-content: center;
     align-items: center;
     background-image: url("/images/background.jpg");
@@ -106,7 +97,7 @@ img{
 }
 .card{
     width:400px;
-    height:350px;
+    height:auto;
     padding:10px;
     border: 5px groove rgba(128, 128, 128, 0.418);
     display:flex;
@@ -121,10 +112,6 @@ img{
 }
 .card p{
     grid-area: body;
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: underline;
-
 }
 
 button{

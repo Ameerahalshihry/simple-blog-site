@@ -1,23 +1,27 @@
 @import './footer.css';
 @import './header.css';
+@import './font.css';
 
 .container{
     display: grid;
-    width:100%;
-    grid-template-rows: 100px 850px 80px;
+    width:auto;
+    grid-template-rows: 100px 1600px 80px;
+    /* grid-template-columns: 300px; */
+    height: auto;
 }
 .post-container{
     display: grid;
-    grid-template-columns: 850px;
-    grid-template-rows: 10px 500px 180px 85px;
+    height: auto;
+    grid-template-columns: 300px;
+    grid-template-rows: 100px 320px 950px 100px;
     justify-content: center;
     align-items: center;
-    grid-gap:1px;
+    grid-gap:5px;
     margin:50px;
     grid-template-areas:
     "hd"
-    "main"
     "sb"
+    "main"
     "ft"
 }
 .post-header{
@@ -36,7 +40,7 @@
     grid-area: ft;
 
 }
-img{
+.author-img{
     border: 1px solid #ddd;
     border-radius: 4px;
     width: 100px;
@@ -50,16 +54,22 @@ img{
 h3, h4{
     font-family: Arial, Helvetica, sans-serif;
 }
+p{
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
 /* Medium Screens */
 @media (min-width: 600px) and (max-width:900px) {
     .container{
         display: grid;
-        width:100%;
+        /* width:100%; */
+        /* grid-template-columns: ; */
         grid-template-rows: 100px 700px 85px;
     }
     .post-container{
         display: grid;
-        grid-template-columns: 300px 500px;
+        grid-template-columns: 800px 500px;
         grid-template-rows: 80px 400px 100px;
         justify-content: center;
         align-items: center;
@@ -70,7 +80,7 @@ h3, h4{
         "main main main main sb sb sb sb"
         "ft ft ft ft ft ft ft ft"
     }
-    img{
+    .author-img{
         border: 1px solid #ddd;
         border-radius: 4px;
         width: 200px;
@@ -83,20 +93,27 @@ h3, h4{
 }
 /* Large Screens */
 @media (min-width:901px) {
+    .container{
+        display: grid;
+        /* width:100%; */
+        /* grid-template-columns: ; */
+        grid-template-rows: 100px 900px 85px;
+    }
     .post-container{
         display: grid;
-        grid-template-columns: 300px 500px;
-        grid-template-rows: 80px 400px 100px;
+        height: auto;
+        grid-template-columns: 30% 30%;
+        grid-template-rows: 80px 600px 100px;
         justify-content: center;
         align-items: center;
-        grid-gap:30px;
+        /* grid-gap:30px; */
         margin:50px;
         grid-template-areas:
         "hd hd hd hd hd hd hd hd"
         "main main main main main main sb sb"
         "ft ft ft ft ft ft ft ft"
     }
-    img{
+    .author-img{
         border: 1px solid #ddd;
         border-radius: 4px;
         width: 200px;
