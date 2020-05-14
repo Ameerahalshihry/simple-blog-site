@@ -65,7 +65,7 @@ p{
         display: grid;
         /* width:100%; */
         /* grid-template-columns: ; */
-        grid-template-rows: 100px 700px 85px;
+        grid-template-rows: 100px 800px 85px;
     }
     .post-container{
         display: grid;
@@ -119,4 +119,15 @@ p{
         width: 200px;
     }
 
+}
+button{
+    background-color:#555555;
+    color:white;
+    border: 2px solid #555555;
+    padding: 3px;
+    font-size: 13px;
+}
+button:hover {
+    background-color:white;
+    color: black;
 }
