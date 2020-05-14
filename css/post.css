@@ -1,0 +1,56 @@
+@import './footer.css';
+@import './header.css';
+
+.container{
+    display: grid;
+    grid-template-rows: 100px 700px 85px;
+    border: 5px groove rgba(128, 128, 128, 0.418);
+    /* width:100%; */
+    /* grid-gap: px; */
+}
+.post-container{
+    display: grid;
+    grid-template-columns: 300px 500px;
+    grid-template-rows: 80px 400px 100px;
+    justify-content: center;
+    align-items: center;
+    grid-gap:30px;
+    margin:50px;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "main main main main main main sb sb"
+    "ft ft ft ft ft ft ft ft"
+}
+.post-header{
+    grid-area: hd;
+
+}
+.post-header h2{
+    font-size: 35px;
+
+}
+.post-body{
+    grid-area: main;
+
+}
+.post-sidebar{
+    grid-area: sb;
+}
+.post-footer{
+    grid-area: ft;
+
+}
+img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.post-footer i{
+    font-size: 40px;
+    margin: 10px;
+    color: black;
+}
+h3, h4{
+    font-family: Arial, Helvetica, sans-serif;
+}

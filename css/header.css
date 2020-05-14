@@ -1,0 +1,22 @@
+header{
+    background-color: lightgray;
+    grid-area: hd;
+}
+header ul{
+    display:flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+header ul li{
+    display: inline-block;
+    /* padding: 20px 90px; */
+}
+h2{
+    color:darkblue;
+}
+h1{
+    text-decoration: underline;
+    color: darkblue;
+    text-shadow: 2px 2px 4px #0000008e;
+    font-size: xx-large;
+}
